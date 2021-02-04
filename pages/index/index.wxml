@@ -1,116 +1,116 @@
 <!--index.wxml-->
-<view  class="container">
-  <view class='page-wrapper'>
-    <swiper style="height:100vh" current="{{current}}">
-      <swiper-item>
-        <view class='page-item page-full-item'>
-          <view class='page-box text-center'>
-            <view class="banner">
-              <view class='banner-shadow'>
-                <view>
-                  <text class="user-title">{{userInfo.name}}</text>
-                </view>
-                <view>
-                  <text class="user-info">{{seniority}}开发经验</text>
-                </view>
-              </view>
-              <view>
-                <image class="image" mode="aspectFill" src="{{src}}"/>
-              </view>
-            </view>
-            <view class="info-box">
-              <text class="user-info">{{userInfo.name}} 年龄：{{age}}</text>
-            </view>
-             <!-- <view>
+<view class="container">
+	<view class='page-wrapper'>
+		<swiper style="height:100vh" current="{{current}}">
+			<swiper-item>
+				<view class='page-item page-full-item'>
+					<view class='page-box text-center'>
+						<view class="banner">
+							<view class='banner-shadow'>
+								<view>
+									<text class="user-title">{{userInfo.name}}</text>
+								</view>
+								<view>
+									<text class="user-info">{{seniority}}开发经验</text>
+								</view>
+							</view>
+							<view>
+								<image class="image" mode="aspectFill" src="{{src}}" />
+							</view>
+						</view>
+						<view class="info-box">
+							<text class="user-info">{{userInfo.name}} 年龄：{{age}}</text>
+						</view>
+						<!-- <view>
                <text class="user-info">{{userInfo.degree}} {{userInfo.degree}}</text> 
             </view>  -->
-            <view>
-              <text class="user-info">联系方式：{{userInfo.phone}}</text>
-            </view>
-            <view>
-              <text class="user-info">电子邮箱：{{userInfo.email}}</text>
-            </view> 
-          </view>
-        </view>
-      </swiper-item>
-      <swiper-item>
-        <scroll-view scroll-y class="scroll-box">
-          <view class='page-item'>
-            <view class='info-title'>
-              <text class="left-dom">title1</text>
-            </view>
-            <view>
-              <text>A</text>
-              <progress percent="85" stroke-width="12" active />
-              <text>B</text>
-              <progress percent="90" stroke-width="12" active />
-              <text>C</text>
-              <progress percent="85" stroke-width="12" active />
-              <text>D</text>
-              <progress percent="85" stroke-width="12" active />
-              <text>E</text>
-              <progress percent="80" stroke-width="12" active />
-            </view> 
-            <view class='info-title'>
-              <text class="left-dom">title3</text>
-            </view>
-            <view>
-              <text>A</text>
-              <progress percent="85" stroke-width="12" active />
-              <text>B</text>
-              <progress percent="90" stroke-width="12" active />
-              <text>C</text>
-              <progress percent="85" stroke-width="12" active />
-              <text>D</text>
-              <progress percent="85" stroke-width="12" active />
-              <text>E</text>
-              <progress percent="80" stroke-width="12" active />
-            </view> 
-            <view class='info-title'>
-              <text class="left-dom">title3</text>
-            </view>
-            <view>
-              <text>A</text>
-              <progress percent="85" stroke-width="12" active />
-              <text>B</text>
-              <progress percent="90" stroke-width="12" active />
-              <text>C</text>
-              <progress percent="85" stroke-width="12" active />
-              <text>D</text>
-              <progress percent="85" stroke-width="12" active />
-              <text>E</text>
-              <progress percent="80" stroke-width="12" active />
-            </view> 
-          </view>
-        </scroll-view>
-      </swiper-item>
-      <swiper-item>
-        <view class='page-item'>
-          <view class='page-box'>
-            <view class='info-title'>
-              <text class="left-dom">经历</text>
-            </view>
-            <view>
-              <text class="user-info">电子邮箱：{{userInfo.email}}</text>
-            </view> 
-          </view>
-        </view>
-      </swiper-item>
-      <swiper-item>
-        <view class='page-item'>
-          <view class='page-box'>
-            <view class='info-title'>
-              <text class="left-dom">我的</text>
-            </view>
-            <view>
-              <text class="user-info">电子邮箱：{{userInfo.email}}</text>
-            </view> 
-          </view>
-        </view>
-      </swiper-item>
-    </swiper>
-  </view>
-  <!-- <view class="userinfo">
+						<view>
+							<text class="user-info">联系方式：{{userInfo.phone}}</text>
+						</view>
+						<view>
+							<text class="user-info">电子邮箱：{{userInfo.email}}</text>
+						</view>
+					</view>
+				</view>
+			</swiper-item>
+			<swiper-item>
+				<scroll-view scroll-y class="scroll-box">
+					<view class='page-item'>
+						<view class='info-title'>
+							<text class="left-dom">title1</text>
+						</view>
+						<view>
+							<text>A</text>
+							<progress percent="85" stroke-width="12" active />
+							<text>B</text>
+							<progress percent="90" stroke-width="12" active />
+							<text>C</text>
+							<progress percent="85" stroke-width="12" active />
+							<text>D</text>
+							<progress percent="85" stroke-width="12" active />
+							<text>E</text>
+							<progress percent="80" stroke-width="12" active />
+						</view>
+						<view class='info-title'>
+							<text class="left-dom">title3</text>
+						</view>
+						<view>
+							<text>A</text>
+							<progress percent="85" stroke-width="12" active />
+							<text>B</text>
+							<progress percent="90" stroke-width="12" active />
+							<text>C</text>
+							<progress percent="85" stroke-width="12" active />
+							<text>D</text>
+							<progress percent="85" stroke-width="12" active />
+							<text>E</text>
+							<progress percent="80" stroke-width="12" active />
+						</view>
+						<view class='info-title'>
+							<text class="left-dom">title3</text>
+						</view>
+						<view>
+							<text>A</text>
+							<progress percent="85" stroke-width="12" active />
+							<text>B</text>
+							<progress percent="90" stroke-width="12" active />
+							<text>C</text>
+							<progress percent="85" stroke-width="12" active />
+							<text>D</text>
+							<progress percent="85" stroke-width="12" active />
+							<text>E</text>
+							<progress percent="80" stroke-width="12" active />
+						</view>
+					</view>
+				</scroll-view>
+			</swiper-item>
+			<swiper-item>
+				<view class='page-item'>
+					<view class='page-box'>
+						<view class='info-title'>
+							<text class="left-dom">经历</text>
+						</view>
+						<view>
+							<text class="user-info">电子邮箱：{{userInfo.email}}</text>
+						</view>
+					</view>
+				</view>
+			</swiper-item>
+			<swiper-item>
+				<view class='page-item'>
+					<view class='page-box'>
+						<view class='info-title'>
+							<text class="left-dom">我的</text>
+						</view>
+						<view>
+							<text class="user-info">电子邮箱：{{userInfo.email}}</text>
+						</view>
+					</view>
+				</view>
+			</swiper-item>
+		</swiper>
+	</view>
+	<!-- <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
@@ -118,3 +118,4 @@
     </block>
   </view> -->
 </view>
+
