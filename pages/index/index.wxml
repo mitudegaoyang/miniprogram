@@ -1,0 +1,60 @@
+<!--index.wxml-->
+<view  class="container">
+  <view class='page-body'>
+    <swiper style="height:100vh">
+      <swiper-item>
+        <view id='item1' class='item item1'>
+          <view class='inner'>
+            <view class="banner">
+              <view class='banner-shadow'>
+                <view>
+                  <text class="user-title">{{userInfo.name}}</text>
+                </view>
+                <view>
+                  <text class="user-info">{{seniority}}开发经验</text>
+                </view>
+              </view>
+              <view>
+                <image class="image" mode="aspectFill" src="{{src}}"/>
+              </view>
+            </view>
+            <view class="info-box">
+              <text class="user-info">{{userInfo.name}} 年龄：{{age}}</text>
+            </view>
+             <!-- <view>
+               <text class="user-info">{{userInfo.degree}} {{userInfo.degree}}</text> 
+            </view>  -->
+            <view>
+              <text class="user-info">联系方式：{{userInfo.phone}}</text>
+            </view>
+            <view>
+              <text class="user-info">电子邮箱：{{userInfo.email}}</text>
+            </view> 
+          </view>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view id='item2' class='item item2'>
+          <view class='inner'>2</view>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view id='item3' class='item item3'>
+          <view class='inner'>3</view>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view id='item4' class='item item4'>
+          <view class='inner'>4</view>
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view> -->
+</view>
