@@ -1,10 +1,10 @@
 <!--index.wxml-->
 <view  class="container">
-  <view class='page-body'>
-    <swiper style="height:100vh">
+  <view class='page-wrapper'>
+    <swiper style="height:100vh" current="{{current}}">
       <swiper-item>
-        <view id='item1' class='item item1'>
-          <view class='inner'>
+        <view class='page-item page-full-item'>
+          <view class='page-box text-center'>
             <view class="banner">
               <view class='banner-shadow'>
                 <view>
@@ -34,18 +34,78 @@
         </view>
       </swiper-item>
       <swiper-item>
-        <view id='item2' class='item item2'>
-          <view class='inner'>2</view>
+        <scroll-view scroll-y class="scroll-box">
+          <view class='page-item'>
+            <view class='info-title'>
+              <text class="left-dom">title1</text>
+            </view>
+            <view>
+              <text>A</text>
+              <progress percent="85" stroke-width="12" active />
+              <text>B</text>
+              <progress percent="90" stroke-width="12" active />
+              <text>C</text>
+              <progress percent="85" stroke-width="12" active />
+              <text>D</text>
+              <progress percent="85" stroke-width="12" active />
+              <text>E</text>
+              <progress percent="80" stroke-width="12" active />
+            </view> 
+            <view class='info-title'>
+              <text class="left-dom">title3</text>
+            </view>
+            <view>
+              <text>A</text>
+              <progress percent="85" stroke-width="12" active />
+              <text>B</text>
+              <progress percent="90" stroke-width="12" active />
+              <text>C</text>
+              <progress percent="85" stroke-width="12" active />
+              <text>D</text>
+              <progress percent="85" stroke-width="12" active />
+              <text>E</text>
+              <progress percent="80" stroke-width="12" active />
+            </view> 
+            <view class='info-title'>
+              <text class="left-dom">title3</text>
+            </view>
+            <view>
+              <text>A</text>
+              <progress percent="85" stroke-width="12" active />
+              <text>B</text>
+              <progress percent="90" stroke-width="12" active />
+              <text>C</text>
+              <progress percent="85" stroke-width="12" active />
+              <text>D</text>
+              <progress percent="85" stroke-width="12" active />
+              <text>E</text>
+              <progress percent="80" stroke-width="12" active />
+            </view> 
+          </view>
+        </scroll-view>
+      </swiper-item>
+      <swiper-item>
+        <view class='page-item'>
+          <view class='page-box'>
+            <view class='info-title'>
+              <text class="left-dom">经历</text>
+            </view>
+            <view>
+              <text class="user-info">电子邮箱：{{userInfo.email}}</text>
+            </view> 
+          </view>
         </view>
       </swiper-item>
       <swiper-item>
-        <view id='item3' class='item item3'>
-          <view class='inner'>3</view>
-        </view>
-      </swiper-item>
-      <swiper-item>
-        <view id='item4' class='item item4'>
-          <view class='inner'>4</view>
+        <view class='page-item'>
+          <view class='page-box'>
+            <view class='info-title'>
+              <text class="left-dom">我的</text>
+            </view>
+            <view>
+              <text class="user-info">电子邮箱：{{userInfo.email}}</text>
+            </view> 
+          </view>
         </view>
       </swiper-item>
     </swiper>
