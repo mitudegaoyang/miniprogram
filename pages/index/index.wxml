@@ -5,13 +5,21 @@
 			<swiper-item>
 				<view class='page-item page-full-item'>
 					<view class='page-box text-center'>
-						<view class="banner">
-							<view class='banner-shadow'>
+						<view class="bg-box">
+							<view class='bg'>
 								<view>
-									<text class="user-title">{{userInfo.name}}</text>
+									<image class="user-logo" />
 								</view>
 								<view>
-									<text class="user-info">{{seniority}}开发经验</text>
+									<text class="user-name">{{userInfo.name}}</text>
+								</view>
+								<view>
+									<text class="user-title">{{userInfo.post}} | {{seniority}}工作经验</text>
+								</view>
+								<view class="wave-box">
+									<image class="wave" src="/images/wave.png"/>
+									<image class="wave wave-slow" src="/images/wave.png"/>
+									<image class="wave wave-fast" src="/images/wave.png"/>
 								</view>
 							</view>
 							<view>
@@ -19,16 +27,22 @@
 							</view>
 						</view>
 						<view class="info-box">
-							<text class="user-info">{{userInfo.name}} 年龄：{{age}}</text>
-						</view>
-						<!-- <view>
-               <text class="user-info">{{userInfo.degree}} {{userInfo.degree}}</text> 
-            </view>  -->
-						<view>
-							<text class="user-info">联系方式：{{userInfo.phone}}</text>
-						</view>
-						<view>
-							<text class="user-info">电子邮箱：{{userInfo.email}}</text>
+							<view class="text-left">
+								<view>
+									<text class="user-info">{{userInfo.address}} | {{age}}岁</text>
+								</view>
+								<view >
+									<text class="user-info">{{userInfo.phone}}</text>
+								</view>
+							</view>
+							<view>
+								<view class="text-left">
+									<text class="user-info">{{userInfo.school}} | {{userInfo.degree}}</text> 
+								</view>
+								<view >
+									<text class="user-info">{{userInfo.email}}</text>
+								</view>
+							</view>
 						</view>
 					</view>
 				</view>

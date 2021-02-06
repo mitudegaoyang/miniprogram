@@ -13,22 +13,22 @@ Page({
     age: "",
     seniority: "",
     userInfo: {
-      name: "姓名",
-      job: "WEB前端开发",
+      name: "高天阳",
+      address: "北京",
+      post: "前端开发",
       birthday: "1992-01-01",
       seniority: "2016-01-01",
-      degree: "学历",
-      phone: "123",
-      email: "123@163.com"
+      school: "北京城市学院",
+      degree: "本科",
+      phone: "136****5113",
+      email: "136****5113@163.com"
     },
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    current: "1"
+    current: "0"
   },
   onShow: function () {
     var width = wx.getSystemInfoSync().windowWidth
     var height = wx.getSystemInfoSync().windowHeight
-    console.log(width)
-    console.log(height)
   },
   onLoad: function () {
     let age = dayjs().diff(this.data.userInfo.birthday, "year")
