@@ -7,8 +7,10 @@
 					<view class='page-box text-center'>
 						<view class="bg-box">
 							<view class='bg'>
-								<view>
-									<image class="user-logo" />
+								<view class="user-logo-box">
+									<image class="user-logo" src="{{logo}}"/>
+									<view class="ring">
+									</view>
 								</view>
 								<view>
 									<text class="user-name">{{userInfo.name}}</text>
@@ -29,18 +31,59 @@
 						<view class="info-box">
 							<view class="text-left">
 								<view>
+									<text class="icon iconfont iconposition"></text>
 									<text class="user-info">{{userInfo.address}} | {{age}}岁</text>
 								</view>
 								<view >
+									<text class="icon iconfont iconphone"></text>
 									<text class="user-info">{{userInfo.phone}}</text>
 								</view>
 							</view>
 							<view>
 								<view class="text-left">
+									<text class="icon iconfont iconschool"></text>
 									<text class="user-info">{{userInfo.school}} | {{userInfo.degree}}</text> 
 								</view>
 								<view >
+									<text class="icon iconfont iconmessage"></text>
 									<text class="user-info">{{userInfo.email}}</text>
+								</view>
+							</view>
+						</view>
+						<view class="info-title">
+							<text>个人网站</text>
+						</view>
+						<view class="info-box info-box-icon">
+							<view>
+								<view>
+									<text class="icon-logo iconfont icongithub"></text>
+								</view>
+								<view >
+									<text class="user-info">github</text>
+								</view>
+							</view>
+							<view >
+								<view>
+									<text class="icon-logo iconfont iconblog"></text>
+								</view>
+								<view >
+									<text class="user-info">blog</text>
+								</view>
+							</view>
+							<view>
+								<view>
+									<text class="icon-logo iconfont iconresume"></text>
+								</view>
+								<view >
+									<text class="user-info">resume</text>
+								</view>
+							</view>
+							<view>
+								<view>
+									<text class="icon-logo iconfont icongitbook"></text>
+								</view>
+								<view >
+									<text class="user-info">gitbook</text>
 								</view>
 							</view>
 						</view>
@@ -50,50 +93,75 @@
 			<swiper-item>
 				<scroll-view scroll-y class="scroll-box">
 					<view class='page-item'>
-						<view class='info-title'>
-							<text class="left-dom">title1</text>
+						<view class='page-box'>
+							<view class="info-title">
+								<text>专业技能</text>
+							</view>
+							<view class="info-container">
+								<view class="user-subtitle">
+									<text>技术能力</text>
+								</view>
+								<view class="user-info-description">
+									<view class="ring-wrapper">
+										<view class="ring-item" wx:for="{{userInfo.score}}">
+											<ring value="{{item.num}}" color="{{item.color}}"></ring>
+											<view class="ring-text">
+												<text>{{item.name}}</text>
+											</view>
+										</view>
+										<!-- <view class="ring-item">
+											<ring value="85" color="#F89F5B" showContent="{{true}}">
+												<view slot="content" class="content-wrapper" style="color:#F89F5B" >
+													<view class="ring-content">HTML</view>
+													<view class="ring-content">85%</view>
+												</view>
+											</ring>
+										</view> -->
+									</view>
+								</view>
+							</view>
+							<view class="info-container">
+								<view class="user-subtitle">
+									<text>专业技能</text>
+								</view>
+								<view wx:for="{{userInfo.ability}}">
+									<text class="user-info font-break">{{item}}</text>
+								</view>
+							</view>
 						</view>
-						<view>
-							<text>A</text>
-							<progress percent="85" stroke-width="12" active />
-							<text>B</text>
-							<progress percent="90" stroke-width="12" active />
-							<text>C</text>
-							<progress percent="85" stroke-width="12" active />
-							<text>D</text>
-							<progress percent="85" stroke-width="12" active />
-							<text>E</text>
-							<progress percent="80" stroke-width="12" active />
-						</view>
-						<view class='info-title'>
-							<text class="left-dom">title3</text>
-						</view>
-						<view>
-							<text>A</text>
-							<progress percent="85" stroke-width="12" active />
-							<text>B</text>
-							<progress percent="90" stroke-width="12" active />
-							<text>C</text>
-							<progress percent="85" stroke-width="12" active />
-							<text>D</text>
-							<progress percent="85" stroke-width="12" active />
-							<text>E</text>
-							<progress percent="80" stroke-width="12" active />
-						</view>
-						<view class='info-title'>
-							<text class="left-dom">title3</text>
-						</view>
-						<view>
-							<text>A</text>
-							<progress percent="85" stroke-width="12" active />
-							<text>B</text>
-							<progress percent="90" stroke-width="12" active />
-							<text>C</text>
-							<progress percent="85" stroke-width="12" active />
-							<text>D</text>
-							<progress percent="85" stroke-width="12" active />
-							<text>E</text>
-							<progress percent="80" stroke-width="12" active />
+					</view>
+				</scroll-view>
+			</swiper-item>
+			<swiper-item>
+				<scroll-view scroll-y class="scroll-box">
+					<view class='page-item'>
+						<view class='page-box'>
+							<view class="info-title">
+								<text>项目经验</text>
+							</view>
+							<view class="info-container info-container-project">
+								<view class="user-subtitle">
+									<text>项目经验</text>
+								</view>
+								<view wx:for="{{userInfo.project}}" wx:for-item="project">
+									<view class="user-container-project-box">
+										<text class="icon-project-logo iconfont iconmore"></text>
+										<view class="user-project-title font-break" >{{project.name}}</view>
+										<view class="user-project-tag-box">
+											<text class="user-project-tag font-break user-project-{{item}}" wx:for="{{project.tag}}">{{item}}</text>
+											<text class="user-project-time font-break">
+												<text wx:for="{{project.time}}">{{item}}{{index===0 ? " - " : ""}}</text>
+											</text>
+										</view>
+										<text class="user-info user-project-description font-break" wx:for="{{project.description}}">{{item}}</text>
+										<view class="user-project-core-box">
+											<text class="user-info user-project-core font-break" wx:for="{{project.core}}">
+												{{item}}
+											</text>
+										</view></view>
+										<view class="user-project-line" wx:if="{{index !== userInfo.project.length-1}}"></view>
+									</view>
+							</view>
 						</view>
 					</view>
 				</scroll-view>
@@ -101,11 +169,42 @@
 			<swiper-item>
 				<view class='page-item'>
 					<view class='page-box'>
-						<view class='info-title'>
-							<text class="left-dom">经历</text>
+						<view class="info-title">
+							<text>工作经历</text>
 						</view>
-						<view>
-							<text class="user-info">电子邮箱：{{userInfo.email}}</text>
+						<view class="info-box">
+							<view>
+								<view>
+									<text class="icon-logo iconfont icongithub"></text>
+								</view>
+								<view >
+									<text class="user-info">github</text>
+								</view>
+							</view>
+							<view >
+								<view>
+									<text class="icon-logo iconfont iconblog"></text>
+								</view>
+								<view >
+									<text class="user-info">blog</text>
+								</view>
+							</view>
+							<view>
+								<view>
+									<text class="icon-logo iconfont iconresume"></text>
+								</view>
+								<view >
+									<text class="user-info">resume</text>
+								</view>
+							</view>
+							<view>
+								<view>
+									<text class="icon-logo iconfont icongitbook"></text>
+								</view>
+								<view >
+									<text class="user-info">gitbook</text>
+								</view>
+							</view>
 						</view>
 					</view>
 				</view>
@@ -113,11 +212,16 @@
 			<swiper-item>
 				<view class='page-item'>
 					<view class='page-box'>
-						<view class='info-title'>
-							<text class="left-dom">我的</text>
+						<view class="info-title">
+							<text>自我评价</text>
 						</view>
-						<view>
-							<text class="user-info">电子邮箱：{{userInfo.email}}</text>
+						<view class="info-container">
+							<view class="user-subtitle">
+								<text>自我评价</text>
+							</view>
+							<view wx:for="{{userInfo.description}}">
+								<text class="user-info font-break">{{item}}</text>
+							</view>
 						</view>
 					</view>
 				</view>

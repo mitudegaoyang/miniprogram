@@ -1,0 +1,10 @@
+<view class="ring">
+  <view class="chart">
+    <view class="chart-progress-down" style="border-color: {{color}}"></view>
+    <view class="chart-progress-up" style="border-color:{{(value>50)?color:'#ccc'}};transform: rotate({{(value>50)?(value-50)*3.6:(value)*3.6}}deg)"></view>
+    <view class="content" wx:if="{{showContent}}">
+      <slot name="content"></slot>
+    </view>
+    <view class="content" style="color: {{color}}" wx:else>{{value}}</view>
+  </view>
+</view>

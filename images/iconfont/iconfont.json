@@ -1,0 +1,72 @@
+{
+  "id": "2371460",
+  "name": "微信小程序",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "19916641",
+      "name": "more",
+      "font_class": "more",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "19905182",
+      "name": "blog",
+      "font_class": "blog",
+      "unicode": "e637",
+      "unicode_decimal": 58935
+    },
+    {
+      "icon_id": "19905183",
+      "name": "gitbook",
+      "font_class": "gitbook",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "19905184",
+      "name": "github",
+      "font_class": "github",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
+      "icon_id": "19905185",
+      "name": "resume",
+      "font_class": "resume",
+      "unicode": "e63a",
+      "unicode_decimal": 58938
+    },
+    {
+      "icon_id": "19904566",
+      "name": "school",
+      "font_class": "school",
+      "unicode": "e633",
+      "unicode_decimal": 58931
+    },
+    {
+      "icon_id": "19904567",
+      "name": "phone",
+      "font_class": "phone",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
+      "icon_id": "19904568",
+      "name": "position",
+      "font_class": "position",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "19904569",
+      "name": "message",
+      "font_class": "message",
+      "unicode": "e636",
+      "unicode_decimal": 58934
+    }
+  ]
+}

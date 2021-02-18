@@ -1,3 +1,19 @@
+@import "../../images/iconfont/iconfont.wxss";
+
+.icon {
+  color: #6161e0;
+  position: relative;
+  top: 2px;
+  margin-right: 8px;
+}
+
+.icon-logo {
+  color: #6161e0;
+  font-size: 40px;
+  position: relative;
+  top: 2px;
+}
+
 /**index.wxss**/
 .page-wrapper {
   padding: 0;
@@ -5,6 +21,8 @@
   height: 100vh;
   white-space: nowrap;
   box-sizing: border-box;
+  background: #f0f0f0;
+  font-size: 12px;
 }
 
 /*设置item*/
@@ -14,7 +32,6 @@
   display: inline-block;
   padding: 10px;
   box-sizing: border-box;
-  background: #f0f0f0;
 }
 
 .page-wrapper .page-full-item {
@@ -33,20 +50,20 @@
 .bg-box {
   position: relative;
   background: #fff;
+  color: #fff;
 }
 
 .bg-box .bg {
   width: 100vw;
-  height: 40vh;
+  height: 55vh;
   line-height: 25px;
   position: absolute;
   bottom: 4px;
-  color: #fff;
 }
 
 .bg-box .image {
   width: 100vw;
-  height: 40vh;
+  height: 55vh; 
 }
 
 .user-name {
@@ -57,14 +74,50 @@
   font-size: 12px;
 }
 
+.user-logo-box {
+  position: relative;
+  height: 40vh;
+}
+
 .user-logo {
-  margin-top: 30px;
-  margin-bottom: 10px;
-  width: 100px;
-  height: 100px;
-  background: #eee;
-  border-radius: 100px;
-  box-shadow: 0 0 0 5px rgba(255,255,255,0.6);
+  position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  z-index: 4;
+  text-align: center;
+}
+
+.user-logo-box::after,.user-logo-box::before {
+  content: "";
+  display: block;
+  position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+  width: 150px;
+  height: 150px;
+	filter: blur(5px);
+  z-index: 1;
+  opacity: 0.5;
+  background: #d8d812;
+  border-radius: 60% 40% 40% 60% / 60% 40% 60% 40%;
+  animation:ring 8s linear infinite;
+}
+
+.user-logo-box::before {
+  background: #fff;
+  border-radius:  45% 65% 45% 65%/ 45% 65% 45% 65%;
+  animation:ring 3s linear infinite;
+}
+
+@keyframes ring
+{
+from {transform: translate(-50%,-50%) rotate(0deg); }
+to {transform: translate(-50%,-50%) rotate(360deg);}
 }
 
 /* 水波纹效果 */
@@ -78,19 +131,19 @@
 
 .wave-box .wave {
   position: absolute;
-  top: 10px;
-  width: 400vw;
+  top: 8px;
+  width: 500vw;
   height: 80%;
   opacity: 0.7;
-  animation:wave 10s linear infinite -5s;
+  animation:wave 18s linear infinite -5s;
 }
 
 .wave-box .wave-slow {
-  top: 8px;
+  top: 4px;
   width: 400vw;
-  height: 70%;
+  height: 80%;
   opacity: 0.4;
-  animation:wave 15s linear infinite;
+  animation:wave-fast 20s linear infinite -5s;
 }
 
 .wave-box .wave-fast {
@@ -98,41 +151,241 @@
   height: 60%;
   top: 12px;
   opacity: 1;
-  animation:wave 8s linear infinite -2s;
+  animation:wave-fast 8s linear infinite -2s;
 }
 
 @keyframes wave
 {
 from {left:0px;}
+to {left:-375vw;}
+}
+
+@keyframes wave-fast
+{
+from {left:0px;}
 to {left:-300vw;}
+}
+
+.info-box.info-box-icon {
+  padding: 5vh 30px;
 }
 
 .info-box {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 10px 40px;
+  padding: 10px 30px;
   background: #fff;
   color: #333;
 }
 
 .info-title {
-  background: #f0f0f0;
-  height: 30px;
-  line-height: 30px;
+  text-align: left;
+  color: #333;
+  height: 40px;
+  line-height: 40px;
   padding: 0 10px;
-  color: #07c160;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.info-container {
+  background: #fff;
+  padding: 20px 30px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.user-subtitle {
+  padding-bottom: 10px;
+  color: #641B2E;
+  text-align: center;
+  font-size: 18px;
+}
+
+.user-subtitle text::after,.user-subtitle text::before{
+  display: inline-block;
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 6px;
+  border: 2px solid #9FBFEA;
+  translate: 10px;
+}
+
+.user-subtitle text::before{
+  translate: -10px;
+}
+
+.user-subtitle::after,.user-subtitle::before{
+  display: inline-block;
+  content: "";
+  background: #9FBFEA;
+  width: 30px;
+  height: 2px;
+  border-radius: 2px;
+  translate: 15px -4px;
+}
+
+.user-subtitle::before{
+  translate: -15px -4px;
+}
+
+.font-break {
+  white-space: normal;
 }
 
 .text-left {
   text-align: left;
 }
 
-.user-info {
-  font-size: 12px;
+/* 专业技能 */
+
+
+.ring-wrapper {
+  width: 100%;
+  overflow: auto;
 }
 
-.left-dom {
-  border-left: 3px solid #07c160;
-  padding-left: 5px; 
+.ring-item {
+  float: left;
+  width: 50%;
+}
+
+.ring-text {
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+}
+
+.content-wrapper {
+  padding: 25px;
+  width: 100px;
+  height: 100px;
+  box-sizing: border-box;
+}
+.ring-content {
+  height: 25px;
+  line-height: 25px;
+}
+
+/* 项目经验 */
+
+.info-container .user-info::before {
+  display: inline-block;
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  background: #6AACDC;
+  position: absolute;
+  translate: -10px 7px;
+}
+
+.info-container .user-info::after {
+  display: block;
+  content: "";
+  height: 10px;
+}
+
+.info-container .icon-project-logo {
+  color: #096DD9;
+  position: absolute;
+  translate: 0 6px;
+}
+
+.info-container .user-project-title {
+  color: #333;
+  font-size: 20px;
+  font-weight: 600;
+  padding-left: 30px;
+}
+
+.info-container .user-project-tag-box {
+  margin: 15px 0 20px;
+}
+
+.info-container .user-project-tag {
+  color: #333;
+  font-weight: 600;
+  border: 1px solid #eee;
+  border-radius: 2px;
+  padding: 4px 6px;
+  margin-right: 5px;
+}
+
+.info-container .user-project-React {
+  color: #61D9FB;
+  border: 1px solid #61D9FB;
+}
+
+.info-container .user-project-antd {
+  color: #096DD9;
+  border: 1px solid #096DD9;
+}
+
+.info-container .user-project-ice {
+  color: #6047DE;
+  border: 1px solid #6047DE;
+}
+
+.info-container .user-project-Vue {
+  color: #4fc08d;
+  border: 1px solid #4fc08d;
+}
+
+.info-container .user-project-Vux {
+  color: #35495e;
+  border: 1px solid #35495e;
+}
+
+.info-container .user-project-Element {
+  color: #409efe;
+  border: 1px solid #409efe;
+}
+
+.info-container .user-project-JSP {
+  color: #2952a4;
+  border: 1px solid #2952a4;
+}
+
+.info-container .user-project-time {
+  float: right;
+  color: #666;
+}
+
+.info-container .user-project-description::before {
+  display: none;
+}
+
+.info-container .user-project-core-box {
+  background: #E6F7FF;
+  color: #096DD9;
+  border-radius: 8px;
+  padding: 0 20px 10px;
+}
+
+.info-container .user-project-core::before {
+  translate: -10px 24px;
+}
+
+.info-container .user-project-core::after {
+  display: none;
+}
+
+.info-container-project{
+  padding: 10px 0;
+}
+
+.user-container-project-box {
+  padding: 0 20px;
+}
+
+.user-project-line {
+  margin: 10px 0;
+  width: 100%;
+  height: 1px;
+  background-image: linear-gradient(to right, #ccc 0%, #ccc 50%, transparent 50%);
+  background-size: 8px 1px;
+  background-repeat: repeat-x;
 }

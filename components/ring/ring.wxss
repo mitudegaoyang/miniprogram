@@ -1,0 +1,57 @@
+/* components/ring/ring.wxss */
+.ring {
+	margin: 30px auto 10px;
+	display: flex;
+}
+
+.ring .chart {
+	width:100px;
+	height:100px;
+	float:left;
+	position:relative;
+	line-height:100px;
+	text-align:center;
+	margin:0 auto;
+}
+
+.ring .chart::before {
+	content:"";
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	border:10px solid #f5f5f5;
+	border-radius:50%;
+	z-index:1;
+}
+
+.ring .chart .chart-progress-down {
+	position:	absolute;
+	top:	0;
+	right:	0;
+	bottom:	0;
+	left:	0;
+	border-radius:	50%;
+	clip:	rect(0,auto,auto,50px);
+	z-index:	2;
+	border:	10px solid #ccc;
+}
+
+.ring .chart .chart-progress-up {
+	position: absolute;
+	top:	0;
+	right:	0;
+	bottom:	0;
+	left:	0;
+	border-radius:	50%;
+	clip:	rect(0,auto,auto,50px);
+  z-index:	3;
+	border:	10px solid #ccc;
+  transform: rotate(0deg);
+}
+
+.ring .chart .content {
+	color: #666;
+	font-weight: 600;
+}

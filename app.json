@@ -9,5 +9,8 @@
     "navigationBarTitleText": "高天阳",
     "navigationBarTextStyle": "black"
   },
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "ring": "/components/ring/ring"
+  }
 }
