@@ -167,47 +167,54 @@
 				</scroll-view>
 			</swiper-item>
 			<swiper-item>
-				<view class='page-item'>
-					<view class='page-box'>
-						<view class="info-title">
-							<text>工作经历</text>
-						</view>
-						<view class="info-box">
-							<view>
-								<view>
-									<text class="icon-logo iconfont icongithub"></text>
-								</view>
-								<view >
-									<text class="user-info">github</text>
-								</view>
+				<scroll-view scroll-y class="scroll-box">
+					<view class='page-item'>
+						<view class='page-box'>
+							<view class="info-title">
+								<text>工作经历</text>
 							</view>
-							<view >
-								<view>
-									<text class="icon-logo iconfont iconblog"></text>
+							<view class="info-container info-container-project">
+								<view class="user-subtitle">
+									<text>工作经历</text>
 								</view>
-								<view >
-									<text class="user-info">blog</text>
-								</view>
-							</view>
-							<view>
-								<view>
-									<text class="icon-logo iconfont iconresume"></text>
-								</view>
-								<view >
-									<text class="user-info">resume</text>
-								</view>
-							</view>
-							<view>
-								<view>
-									<text class="icon-logo iconfont icongitbook"></text>
-								</view>
-								<view >
-									<text class="user-info">gitbook</text>
+								<view class="cu-timeline">
+									<!-- <view class="cu-time"></view> -->
+									<!-- <view class="cu-time cuIcon-time"></view>
+									<view class="cu-time cuIcon-remind"></view>
+									<view class="cu-time cuIcon-countdown"></view>
+									<view class="cu-time cuIcon-footprint"></view> -->
+									<view class="cu-item text-blue cuIcon-creative">
+										<view class="content">
+											<view class="cu-capsule radius">
+												<view class="cu-tag bg-cyan">昨天</view>
+												<view class="cu-tag line-cyan">2019.10 - 2019.10</view>
+											</view>
+											<view class="margin-top">这是第一次，我家的铲屎官走了这么久。久到足足有三天！！ 在听到他的脚步声响在楼梯间的那一刻，我简直想要破门而出，对着他狠狠地吼上10分钟，然后再看心情要不要他进门。</view>
+										</view>
+									</view>
+									<view class="cu-item text-yellow cuIcon-moneybag">
+										<view class="content">
+											<view class="cu-capsule radius">
+												<view class="cu-tag bg-cyan">今天</view>
+												<view class="cu-tag line-cyan">2019.10 - 2020.10</view>
+											</view>
+											<view class="margin-top">这是第一次，我家的铲屎官走了这么久。久到足足有三天！！ 在听到他的脚步声响在楼梯间的那一刻，我简直想要破门而出，对着他狠狠地吼上10分钟，然后再看心情要不要他进门。</view>
+										</view>
+									</view>
+									<view class="cu-item text-red cuIcon-hot">
+										<view class="content">
+											<view class="cu-capsule radius">
+												<view class="cu-tag bg-cyan">明天</view>
+												<view class="cu-tag line-cyan">2019.10 - 2020.10</view>
+											</view>
+											<view class="margin-top">这是第一次，我家的铲屎官走了这么久。久到足足有三天！！ 在听到他的脚步声响在楼梯间的那一刻，我简直想要破门而出，对着他狠狠地吼上10分钟，然后再看心情要不要他进门。</view>
+										</view>
+									</view>
 								</view>
 							</view>
 						</view>
 					</view>
-				</view>
+				</scroll-view>
 			</swiper-item>
 			<swiper-item>
 				<view class='page-item'>

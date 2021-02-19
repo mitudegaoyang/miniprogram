@@ -23,13 +23,12 @@
     "compileHotReLoad": false,
     "useMultiFrameRuntime": true,
     "useApiHook": true,
-    "useApiHostProcess": false,
+    "useApiHostProcess": true,
     "babelSetting": {
       "ignore": [],
       "disablePlugins": [],
       "outputPath": ""
     },
-    "enableEngineNative": false,
     "bundle": false,
     "useIsolateContext": true,
     "useCompilerModule": true,
@@ -41,7 +40,7 @@
   },
   "compileType": "miniprogram",
   "libVersion": "2.0.4",
-  "appid": "touristappid",
+  "appid": "wxb78f8672ae8f5336",
   "projectname": "%E6%B5%8B%E8%AF%95demo",
   "condition": {
     "search": {
