@@ -190,7 +190,7 @@ Page({
       ]
     },
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    current: "3"
+    current: "0"
   },
   onShow: function () {
     var width = wx.getSystemInfoSync().windowWidth
