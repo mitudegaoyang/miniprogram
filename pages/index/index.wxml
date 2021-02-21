@@ -178,36 +178,54 @@
 									<text>工作经历</text>
 								</view>
 								<view class="cu-timeline">
-									<!-- <view class="cu-time"></view> -->
-									<!-- <view class="cu-time cuIcon-time"></view>
-									<view class="cu-time cuIcon-remind"></view>
-									<view class="cu-time cuIcon-countdown"></view>
-									<view class="cu-time cuIcon-footprint"></view> -->
 									<view class="cu-item text-blue cuIcon-creative">
 										<view class="content">
 											<view class="cu-capsule radius">
-												<view class="cu-tag bg-cyan">昨天</view>
-												<view class="cu-tag line-cyan">2019.10 - 2019.10</view>
+												<view class="cu-tag bg-cyan">日海智能</view>
+												<view class="cu-tag line-cyan">2019.08 - 至今</view>
 											</view>
-											<view class="margin-top">这是第一次，我家的铲屎官走了这么久。久到足足有三天！！ 在听到他的脚步声响在楼梯间的那一刻，我简直想要破门而出，对着他狠狠地吼上10分钟，然后再看心情要不要他进门。</view>
+											<view class="margin-top">物联网时代智慧服务商</view>
+											<view class="margin-top">1、主要使用React、Redux和必要的HTML和CSS对平台网站的前端开发</view>
+											<view>2、负责网站业务逻辑的实现，包括界面展示、数据交互等</view>
+											<view>3、负责完成js控件的实现，包括ui控件和其他模块化封装</view>
+											<view>4、参与html/css方面的工作</view>
+											<view>5、测试并修复bug，优化代码并提升代码质量及页面性能</view>
 										</view>
 									</view>
 									<view class="cu-item text-yellow cuIcon-moneybag">
 										<view class="content">
 											<view class="cu-capsule radius">
-												<view class="cu-tag bg-cyan">今天</view>
-												<view class="cu-tag line-cyan">2019.10 - 2020.10</view>
+												<view class="cu-tag bg-cyan">鱼猫金服</view>
+												<view class="cu-tag line-cyan">2018.07 - 2019.08</view>
 											</view>
-											<view class="margin-top">这是第一次，我家的铲屎官走了这么久。久到足足有三天！！ 在听到他的脚步声响在楼梯间的那一刻，我简直想要破门而出，对着他狠狠地吼上10分钟，然后再看心情要不要他进门。</view>
+											<view class="margin-top">供应链金融网络借贷信息中介平台</view>
+											<view class="margin-top">1、根据产品指定的原型图了解项目基本需求</view>
+											<view>2、进行项目分析及技术选型，搭建项目框架，进行基本的路由配置及demo编写</view>
+											<view>3、利用H5相关技术、主流前端框架（主要使用Vue.js）开发网站，移动端等多平台应用</view>
+											<view>4、与产品、UI进行良好沟通，快速理解各模块需求，并进行相应的模块设计与开发</view>
+											<view>5、配合产品经理对web前端产品持续优化页面架构和性能，改善用户体验</view>
+											<view>6、与后端合作完成整个项目和产品开发</view>
+											<view>7、测试维护，修复bug，提升用户体验及页面性能</view>
+											<view>8、部署上线，能够及时处理线上问题</view>
 										</view>
 									</view>
 									<view class="cu-item text-red cuIcon-hot">
 										<view class="content">
 											<view class="cu-capsule radius">
-												<view class="cu-tag bg-cyan">明天</view>
-												<view class="cu-tag line-cyan">2019.10 - 2020.10</view>
+												<view class="cu-tag bg-cyan">毫末科技</view>
+												<view class="cu-tag line-cyan">2017.04 - 2018.07</view>
 											</view>
-											<view class="margin-top">这是第一次，我家的铲屎官走了这么久。久到足足有三天！！ 在听到他的脚步声响在楼梯间的那一刻，我简直想要破门而出，对着他狠狠地吼上10分钟，然后再看心情要不要他进门。</view>
+											<view class="margin-top">技术咨询及软件开发服务</view>
+											<view class="margin-top">1、协助产品对项目需求进行梳理</view>
+											<view>2、根据产品和UI设计制作规范的前端Web页面</view>
+											<view>3、利用H5相关技术、主流前端框架（AngularJS、Vue.js等）开发网站，移动端等多平台应用</view>
+											<view>4、与产品、UI进行良好沟通，快速理解各方需求，并进行相应的模块设计与开发</view>
+											<view>5、配合产品经理对web前端产品持续优化页面架构和性能，改善用户体验</view>
+											<view>6、根据用户的需求,分析并给出最优的前台技术解决方案</view>
+											<view>7、与后端合作完成整个项目和产品开发</view>
+											<view>8、测试维护，修复bug,提升用户体验及页面性能</view>
+											<view>9、协助部署上线，能够及时处理线上问题</view>
+											<view>10、整个项目过程中把控各模块开发人员进度，在开发人员遇到困难及时提供协助</view>
 										</view>
 									</view>
 								</view>
