@@ -54,15 +54,15 @@
 							<text>个人网站</text>
 						</view>
 						<view class="info-box info-box-icon">
-							<view>
+							<view bindtap="CopyLink" data-link="https://github.com/mitudegaoyang">
 								<view>
 									<text class="icon-logo iconfont icongithub"></text>
 								</view>
-								<view >
+								<view>
 									<text class="user-info">github</text>
 								</view>
 							</view>
-							<view >
+							<view bindtap="CopyLink" data-link="https://www.gaotianyang.top">
 								<view>
 									<text class="icon-logo iconfont iconblog"></text>
 								</view>
@@ -70,7 +70,7 @@
 									<text class="user-info">blog</text>
 								</view>
 							</view>
-							<view>
+							<view bindtap="CopyLink" data-link="https://me.gaotianyang.top">
 								<view>
 									<text class="icon-logo iconfont iconresume"></text>
 								</view>
@@ -78,7 +78,7 @@
 									<text class="user-info">resume</text>
 								</view>
 							</view>
-							<view>
+							<view bindtap="CopyLink" data-link="https://mitudegaoyang.gitbook.io">
 								<view>
 									<text class="icon-logo iconfont icongitbook"></text>
 								</view>

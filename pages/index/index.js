@@ -192,6 +192,17 @@ Page({
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     current: "0"
   },
+  CopyLink(e) {
+    wx.setClipboardData({
+      data: e.currentTarget.dataset.link,
+      success: res => {
+        wx.showToast({
+          title: '已复制',
+          duration: 1000,
+        })
+      }
+    })
+  },
   onShow: function () {
     var width = wx.getSystemInfoSync().windowWidth
     var height = wx.getSystemInfoSync().windowHeight
