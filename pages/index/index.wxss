@@ -67,12 +67,16 @@
   height: 55vh;
 }
 
+.user-name-box {
+  padding-bottom: 10px;
+}
+
 .user-name {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .user-title {
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .user-logo-box {
@@ -85,9 +89,9 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
-  width: 150px;
-  height: 150px;
-  border-radius: 150px;
+  width: 45vw;
+  height: 45vw;
+  border-radius: 50%;
   z-index: 4;
   text-align: center;
 }
@@ -99,8 +103,8 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
-  width: 150px;
-  height: 150px;
+  width: 45vw;
+  height: 45vw;
 	filter: blur(5px);
   z-index: 1;
   opacity: 0.5;
@@ -294,7 +298,7 @@ to {left:-300vw;}
 .info-container .icon-project-logo {
   color: #096DD9;
   position: absolute;
-  translate: 0 6px;
+  transform: translate(0, 6px);
 }
 
 .info-container .user-project-title {
@@ -365,7 +369,7 @@ to {left:-300vw;}
   background: #E6F7FF;
   color: #096DD9;
   border-radius: 8px;
-  padding: 0 20px 10px;
+  padding: 0 20px 15px;
 }
 
 .info-container .user-project-core::before {

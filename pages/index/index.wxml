@@ -12,7 +12,7 @@
 									<view class="ring">
 									</view>
 								</view>
-								<view>
+								<view  class="user-name-box">
 									<text class="user-name">{{userInfo.name}}</text>
 								</view>
 								<view>
