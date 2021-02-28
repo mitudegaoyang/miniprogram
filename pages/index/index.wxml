@@ -8,9 +8,8 @@
 						<view class="bg-box">
 							<view class='bg'>
 								<view class="user-logo-box">
-									<image class="user-logo" src="{{logo}}"/>
-									<view class="ring">
-									</view>
+									<view class="user-logo"></view>
+									<view class="ring"></view>
 								</view>
 								<view  class="user-name-box">
 									<text class="user-name">{{userInfo.name}}</text>
@@ -19,9 +18,9 @@
 									<text class="user-title">{{userInfo.post}} | {{seniority}}工作经验</text>
 								</view>
 								<view class="wave-box">
-									<image class="wave" src="/images/wave.png"/>
-									<image class="wave wave-slow" src="/images/wave.png"/>
-									<image class="wave wave-fast" src="/images/wave.png"/>
+									<image class="wave" src="{{waveSrc}}"/>
+									<image class="wave wave-slow" src="{{waveSrc}}"/>
+									<image class="wave wave-fast" src="{{waveSrc}}"/>
 								</view>
 							</view>
 							<view>

@@ -9,8 +9,8 @@ const util = require('../../utils/util.js')
 Page({
   data: {
     motto: '知言 善行 笃学 慎思',
-    src: "https://s3.ax1x.com/2021/02/10/ywGki6.png",
-    logo: "../../images/logo.jpeg",
+    src: "https://s3.ax1x.com/2021/02/28/6CFyl9.png",
+    waveSrc: "https://s3.ax1x.com/2021/02/28/6CAfRe.png",
     age: "",
     seniority: "",
     userInfo: {
@@ -214,5 +214,11 @@ Page({
       age: age,
       seniority: seniority
     })
+  },
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+
   },
 })

@@ -94,6 +94,8 @@
   border-radius: 50%;
   z-index: 4;
   text-align: center;
+  background: url(https://s3.ax1x.com/2021/02/28/6CF4YD.jpg) no-repeat 43% 30%;
+  background-size: 240% 300%;
 }
 
 .user-logo-box::after,.user-logo-box::before {
@@ -107,7 +109,7 @@
   height: 45vw;
 	filter: blur(5px);
   z-index: 1;
-  opacity: 0.5;
+  opacity: 0.4;
   background: #d8d812;
   border-radius: 60% 40% 40% 60% / 60% 40% 60% 40%;
   animation:ring 8s linear infinite;
