@@ -177,11 +177,25 @@
 									<text>工作经历</text>
 								</view>
 								<view class="cu-timeline">
-									<view class="cu-item text-blue cuIcon-creative">
+									<view class="cu-item text-blue cuIcon-rank">
+										<view class="content">
+											<view class="cu-capsule radius">
+												<view class="cu-tag bg-cyan">亿欧</view>
+												<view class="cu-tag line-cyan">2021.04 - 至今</view>
+											</view>
+											<view class="margin-top">科技+产业+投资信息平台和智库</view>
+											<view class="margin-top">1、负责公司产品线前端工程开发和维护</view>
+											<view>2、负责高质量的设计和编码，承担重点、难点的技术攻坚</view>
+											<view>3、与产品经理配合，深度参与产品需求讨论，功能定义</view>
+											<view>4、项目主要使用Vue、Ts、Less进行网站功能开发</view>
+											<view>5、解决兼容性问题，上线紧急任务，修正线上bug等</view>
+										</view>
+									</view>
+									<view class="cu-item text-green cuIcon-creative">
 										<view class="content">
 											<view class="cu-capsule radius">
 												<view class="cu-tag bg-cyan">日海智能</view>
-												<view class="cu-tag line-cyan">2019.08 - 至今</view>
+												<view class="cu-tag line-cyan">2019.08 - 2021.04</view>
 											</view>
 											<view class="margin-top">物联网时代智慧服务商</view>
 											<view class="margin-top">1、主要使用React、Redux和必要的HTML和CSS对平台网站的前端开发</view>

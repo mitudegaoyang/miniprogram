@@ -358,6 +358,11 @@ to {left:-300vw;}
   border: 1px solid #2952a4;
 }
 
+.info-container .user-project-ECharts {
+  color: #e43961;
+  border: 1px solid #e43961;
+}
+
 .info-container .user-project-time {
   float: right;
   color: #666;
