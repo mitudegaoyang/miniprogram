@@ -363,6 +363,26 @@ to {left:-300vw;}
   border: 1px solid #e43961;
 }
 
+.info-container .user-project-single-spa {
+  color: #ee689f;
+  border: 1px solid #ee689f;
+}
+
+.info-container .user-project-formilyjs {
+  color: #4d1db5;
+  border: 1px solid #4d1db5;
+}
+
+.info-container .user-project-cloud-charts {
+  color: #ff8200;
+  border: 1px solid #ff8200;
+}
+
+.info-container .user-project-emotion {
+  color: #c43bad;
+  border: 1px solid #c43bad;
+}
+
 .info-container .user-project-time {
   float: right;
   color: #666;

@@ -177,11 +177,29 @@
 									<text>工作经历</text>
 								</view>
 								<view class="cu-timeline">
-									<view class="cu-item text-blue cuIcon-rank">
+									<view class="cu-item text-red cuIcon-like">
+										<view class="content">
+											<view class="cu-capsule radius">
+												<view class="cu-tag bg-cyan">蓬涞数据</view>
+												<view class="cu-tag line-cyan">2022.06 - 2023.09</view>
+											</view>
+											<view class="margin-top">数据驱动医疗，精益资源配置</view>
+											<view class="margin-top">1、负责公司的网页设计并开发用户友好的界面，确保页面的兼容性和可访问性</view>
+											<view>2、负责数据可视化实现，设计和开发数据可视化工具</view>
+											<view>3、开发和维护医院管理的前端界面，使之能够轻松访问和更新医院管理信息</view>
+											<view>4、参与项目的前端技术栈选型</view>
+											<view>5、负责项目的响应式设计，确保网站在各种屏幕尺寸和设备上都能正常显示和操作</view>
+											<view>6、对前端代码进行性能优化，提高网页加载速度和性能，包括减少HTTP请求、使用CDN、压缩资源等</view>
+											<view>7、与UI/UX设计师合作，对项目的交互体验负责，包括表单验证、动画效果等</view>
+											<view>8、使用版本控制工具管理前端代码，确保团队协作和代码版本追踪</view>
+											<view>9、编写前端代码的文档，包括代码注释、使用手册等</view>
+										</view>
+									</view>
+									<view class="cu-item text-green cuIcon-rank">
 										<view class="content">
 											<view class="cu-capsule radius">
 												<view class="cu-tag bg-cyan">亿欧</view>
-												<view class="cu-tag line-cyan">2021.04 - 至今</view>
+												<view class="cu-tag line-cyan">2021.04 - 2022.06</view>
 											</view>
 											<view class="margin-top">科技+产业+投资信息平台和智库</view>
 											<view class="margin-top">1、负责公司产品线前端工程开发和维护</view>
@@ -191,7 +209,7 @@
 											<view>5、解决兼容性问题，上线紧急任务，修正线上bug等</view>
 										</view>
 									</view>
-									<view class="cu-item text-green cuIcon-creative">
+									<view class="cu-item text-orange cuIcon-creative">
 										<view class="content">
 											<view class="cu-capsule radius">
 												<view class="cu-tag bg-cyan">日海智能</view>
@@ -222,7 +240,7 @@
 											<view>8、部署上线，能够及时处理线上问题</view>
 										</view>
 									</view>
-									<view class="cu-item text-red cuIcon-hot">
+									<view class="cu-item text-blue cuIcon-hot">
 										<view class="content">
 											<view class="cu-capsule radius">
 												<view class="cu-tag bg-cyan">毫末科技</view>
