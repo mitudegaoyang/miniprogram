@@ -233,11 +233,11 @@ to {left:-300vw;}
   height: 2px;
   border-radius: 2px;
   translate: 15px;
-  transform: translate(20px, -4px);
+  transform: translate(-5px, -4px);
 }
 
 .user-subtitle::before{
-  transform: translate(-20px, -4px);
+  transform: translate(-25px, -4px);
 }
 
 .font-break {
